@@ -5,6 +5,8 @@ import "./Search.css";
 export default function SearchForm({ onChangeSearch }) {
   const [search, setSearch] = useState("");
 
+  window.onload = function () { document.querySelector("input").focus(); }
+
   function handleSubmit(e) {
     e.preventDefault();
     onChangeSearch(search);
@@ -22,10 +24,8 @@ export default function SearchForm({ onChangeSearch }) {
   return (
     <form className="container-form" onSubmit={handleSubmit} action="">
       <input
-        className="searchSearch input"
-        onChange={onChange}
-        type="text"
-        placeholder="Vul hier uw zoekwoord in"
+        className="searchSearch input" onChange={onChange}
+        type="text" placeholder="Vul hier uw zoekwoord in"
       />
       <BiSearch size={25} className="searchIcon input" onClick={handleSubmit} />
     </form>

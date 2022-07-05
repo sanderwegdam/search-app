@@ -38,8 +38,15 @@ img, .d-flex{
   cursor: pointer;  
   outline: none;
   border-radius: 20px;
-  width:200px;
+  width: 600vw;
+  max-width: 60vw;
   text-align: center;
+}
+
+.searchSearch::placeholder {
+  color: #999;
+  font-weight: 100;
+  font-size: 12px;
 }
 
 .searchIcon {
@@ -47,3 +54,19 @@ img, .d-flex{
   width: 25px;
   height: 25px;
 }
+
+@media (min-width: 340px) and (max-width: 1200px) {
+.searchSearch {
+    width: 600vw;
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 2048px) {
+  .searchSearch {
+    width: 20vw;
+    max-width: 20vw;
+  }
+}
+
+
