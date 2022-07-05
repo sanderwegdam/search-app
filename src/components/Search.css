@@ -57,7 +57,7 @@ img, .d-flex{
 
 @media (min-width: 340px) and (max-width: 1200px) {
 .searchSearch {
-    width: 600vw;
+    width: 60vw;
     max-width: 60vw;
   }
 }

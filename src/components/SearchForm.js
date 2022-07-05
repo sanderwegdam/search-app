@@ -9,6 +9,7 @@ export default function SearchForm({ onChangeSearch }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    document.querySelector("input").focus();
     onChangeSearch(search);
   }
 
