@@ -44,6 +44,12 @@ export default function SearchApp() {
         <img src={search[7]} className="d-flex" />
         <img src={search[8]} className="d-flex" />
         <img src={search[9]} className="d-flex" />
+        <img src={search[10]} className="d-flex" />
+        <img src={search[11]} className="d-flex" />
+        <img src={search[12]} className="d-flex" />
+        <img src={search[13]} className="d-flex" />
+        <img src={search[14]} className="d-flex" />
+        <img src={search[15]} className="d-flex" />
       </>
     </div >
   );
